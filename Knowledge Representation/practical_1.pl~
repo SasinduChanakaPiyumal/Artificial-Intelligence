@@ -4,7 +4,6 @@ parent(bill,ann).
 parent(bill,kate).
 parent(kate,jack).
 
-female(victoria).
 female(liz).
 female(ann).
 female(kate).
@@ -14,5 +13,4 @@ male(jack).
 
 mother(X,Y):- parent(X,Y),female(X).
 grandparent(X,Y) :- parent(X,Z),parent(Z,Y).
-hasachild(X) :- parent(X,Y).
-
+hasachild(X) :- parent(X,_).

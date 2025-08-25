@@ -1,4 +1,5 @@
-grandfather(X,Z):- father(X,Y),parent(Y,Z).
+grandfather(X,Z):- father(X,Y), father(Y,Z).
+grandfather(X,Z):- father(X,Y), mother(Y,Z).
 parent(X,Y):- father(X,Y).
 parent(X,Y):- mother(X,Y).
 

@@ -1,8 +1,4 @@
-proud(X):- parent(X,Y),newborn(Y).
-parent(X,Y):- father(X,Y).
-parent(X,Y) :- mother(X,Y).
+proud(X) :- father(X,Y), newborn(Y).
 
-father(peter,ann).
+father(peter, ann).
 newborn(ann).
-
-
